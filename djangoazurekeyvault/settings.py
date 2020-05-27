@@ -22,6 +22,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '0nheypybi78mo9l%%ahc#q0x%v@309ny2_q(wo$oyqmz0v=qqb'
 
+# AZURE KEYS
+
+os.environ['AZURE_CLIENT_ID']="ap-id"
+os.environ['AZURE_CLIENT_SECRET']="password"
+os.environ['AZURE_TENANT_ID']="tenant-id"
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 

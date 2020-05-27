@@ -1,4 +1,9 @@
 from django.shortcuts import render
+from helloworld.azvault import AzVault
 
 def home(request):
-    return render(request, 'home.html')
+    secret = AzVault.getSecret('sqlusername')
+    context = {
+        'secret':secret,
+    }
+    return render(request, 'home.html', context)
